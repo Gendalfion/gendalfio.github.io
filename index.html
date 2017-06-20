@@ -3,34 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>My Public Website</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 <body>
-  <h1>This page is related to deploying static website to public Internet using GitHub pages</h1>
-  <h2>(the basic scheme for deploying is <a href="deploy-model.html" target="_blank">here</a>)</h2>
-  <h3>Note that this is handy tool <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> used to generate static sites</h3>
+  <header class="container">
+    <div class="text-center">
+      <div class="row">
+        <h1>This page is related to deploying static website to public Internet using GitHub pages</h1>
+        <h2>(the basic scheme for deploying is <a href="deploy-model.html" target="_blank">here</a>)</h2>
+        <h3>Note that this is handy tool <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> used to generate static sites</h3>
+      </div>
+    </div>
+  </header>
 
-  <h3>Let's see how to deploy website step by step:</h3>
-  <ol>
-    <li>First of all we need content</li>
-    <p>We can create site content from scratch (like this website) or use special tools (like <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>)</p>
-    
-    <li>Once we created a content we can publish it using GitHub Pages</li>
-    <p>GitHub Pages is a service offered by GitHub. Specifically, GitHub Pages are public webpages that are hosted and published through GitHub.</p>
-    <p>Why GitHub Pages? GitHub Pages offers extensive integration and support for Jekyll.
-    By using both, you'll benefit from:</p>
-    <ul>
-      <li>Easy setup</li>
-      <li>Troubleshooting your site</li>
-      <li>Updating and maintaining your site</li>
-    </ul>
-    <p>
-      <strong>Note:</strong> Remember, it is possible to follow all of the steps with your own content —
-      just make sure that your HTML is inside of a file called index.html (a GitHub Pages requirement).
-    </p>
-    
-    <li>Make repository on GitHub</li>
-    <p>Specifically, the repo's name must be in the following format: <strong>your-user-name.github.io</strong></p>
-
-  </ol>
+  <section class="container">
+    <h3>Let's see how to deploy website step by step:</h3>
+    <ol>
+      <li>First of all we need content</li>
+      <p>We can create site content from scratch (like this website) or use special tools (like <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>)</p>
+      
+      <li>Once we created a content we can publish it using GitHub Pages</li>
+      <p>GitHub Pages is a service offered by GitHub. Specifically, GitHub Pages are public webpages that are hosted and published through GitHub.</p>
+      <p>Why GitHub Pages? GitHub Pages offers extensive integration and support for Jekyll.
+      By using both, you'll benefit from:</p>
+      <ul>
+        <li>Easy setup</li>
+        <li>Troubleshooting your site</li>
+        <li>Updating and maintaining your site</li>
+      </ul>
+      <p>
+        <strong>Note:</strong> Remember, it is possible to follow all of the steps with your own content —
+        just make sure that your HTML is inside of a file called index.html (a GitHub Pages requirement).
+      </p>
+      
+      <li>Make repository on GitHub and push your content to it</li>
+      <p>Specifically, the repo's name must be in the following format: <strong>your-user-name.github.io</strong></p>
+  
+      <li>Now you can access your website on URL like this: <b>https://your-user-name.github.io/</b></li>
+    </ol>
+</section>
 </body>
 </html>

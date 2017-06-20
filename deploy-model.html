@@ -7,22 +7,52 @@
 <body>
 <style>
   /** {
-      border: 1px solid Black;
+    border: 1px solid Black;
   }*/
   body {
-      background-color: DarkGray;
+    background-color: White;
   }
   #content {
-      width: 85%;
-      margin: auto;
+    width: 85%;
+    margin: auto;
   }
   #content img {
-      width: 100%;
-      margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: LightSlateGray;
+    margin: 50px 0px;
+  }
+  .comment {
+    background-color: LightBlue;
+    width: 100%;
+  }
+  .comment h4 {
+    text-align: center;
   }
 </style>
 <div id="content">
   <img src="deployToGitHubPages.svg">
+  <img src="step2.svg">
+
+  <div class="comment">
+    <h4>Observe the diagram to the bottom. It outlines the overall setup of your DNS records within Route 53 (amazon.com
+    service):</h4>
+    <ol>
+      <li>You purchased a custom domain name through a Domain Registrar, which in this case, is Route 53.</li>
+      <li>Four unique name servers were assigned to your custom domain name after your purchase.</li>
+      <li>To assign your custom domain name to your web site, you had to set up a Hosted Zone with multiple DNS records
+        for your custom domain name. The Hosted Zone was set up within Route 53.
+      </li>
+      <li>Inside of the Hosted Zone, the NS record was created automatically for you by Route 53. However, you created
+        the A record and the CNAME record.
+      </li>
+      <li>This setup allows you to visit your personal website with your new custom domain name, even though it's hosted
+        on GitHub!
+      </li>
+    </ol>
+  </div>
+
+  <img src="customDomain.svg">
 </div>
 </body>
 </html>
